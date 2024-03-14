@@ -25,7 +25,7 @@ form.addEventListener("submit", async (event) => {
       } else {
         console.log(res);
         localStorage.setItem("token", res.token);
-        window.open("/pages/login.html", "_self");
+        window.open("/login.html", "_self");
       }
     })
     .catch((err) => console.log(err));
