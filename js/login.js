@@ -23,9 +23,8 @@ form.addEventListener("submit", async (event) => {
       if (res.message === "Invalid credentials") {
         alert("username or password is incorrect");
       } else {
-        console.log(res);
         localStorage.setItem("token", res.token);
-        window.open("../login.html", "_self");
+        console.log(res.token);
       }
     })
     .catch((err) => console.log(err));
