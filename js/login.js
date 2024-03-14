@@ -25,6 +25,7 @@ form.addEventListener("submit", async (event) => {
       } else {
         localStorage.setItem("token", res.token);
         console.log(res.token);
+        window.open(`./login.html?token=${res.token}`);
       }
     })
     .catch((err) => console.log(err));
