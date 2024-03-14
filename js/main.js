@@ -1,6 +1,6 @@
 const API = "https://api.escuelajs.co/api/v1/products";
 const row = document.querySelector(".products__row");
-const loading = document.querySelector(".loading");
+// const loading = document.querySelector(".loading");
 
 let isLogin = localStorage.getItem("token");
 
@@ -18,7 +18,7 @@ async function fetchData(api) {
     .then((res) => createCard(res))
     .catch((err) => console.log(err))
     .finally(() => {
-      loading.classList.add("loading-none");
+      // loading.classList.add("loading-none");
     });
 }
 
